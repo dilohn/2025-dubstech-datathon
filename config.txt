@@ -1,0 +1,32 @@
+[FILES]
+INPUT_FILE = full.csv
+DATA_FILE = full.csv
+DEFAULT_CSV_PATH = full.csv
+
+[MODEL]
+MODEL_DIR = datathon_model
+SCALER_FILE = datathon_scaler.pkl
+RANDOM_STATE = 25
+FORECAST_HORIZON = 90
+EPOCHS = 5
+INPUT_CHUNK_LENGTH = 30
+MIN_SERIES_LENGTH = 120
+TENSOR_CORE = high
+CPU_CORES = 16
+BATCH_SIZE = 128
+PRECISION = 32-true
+
+[DATA_PREPROCESSING]
+INPUT_DATE_COL = Created Date
+NORMALIZED_DATE_COL = date
+NEIGHBORHOOD_COLUMN = Neighborhood
+NEIGHBORHOOD_EXCLUDE = OOO
+TEST_SERVICE_REQUEST_TYPES = ZZ-Baseline Testing Only,ZZDONOTUSE - For Testing Only
+MISSING_VALUE_TOKEN = <missing>
+ZIP_CODE_COLUMN = ZIP Code
+ZIP_CODE_PATTERN = (\d{5})
+GROUP_COLUMNS = Service Request Type,City Department,ZIP Code
+
+[CHECK]
+COLUMNS_OF_INTEREST = Service Request Type,City Department,Method Received,Status,Police Precinct,Neighborhood, ZIP Code
+MISSING_VALUE_METHOD = isna
