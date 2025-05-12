@@ -24,21 +24,13 @@ To support this goal, we hope to uncover insights, create visualizations, and tr
 
 ## Tasks & Challenges
 ### Data Analysis & Visualization
-- Visualize customer requests over time. Trends by:
-  - Month
-  - Quarter
-  - Day of Week
-  - Hour of Day
-  - Year
+- Visualize customer requests over time. Trends by: Month, Quarter, Day of Week, Hour of Day, Year.
 - Identify areas with the highest service requests
 - Total requests by different service types: what trends emerge? Has any grown over time?
 - Which department handles the most requests?
 - Are certain neighborhoods or council districts consistently reporting more issues? What types?
 - Detect seasonality
--  Create a custom metric to rank neighborhoods by performance/resource need:
-  - Describe the logic behind the metric
-  - Present alternative versions of your formula
-  - Rank neighborhoods accordingly
+-  Create a custom metric to rank neighborhoods by performance/resource need: Describe the logic behind the metric, present alternative versions of your formula, rank neighborhoods accordingly.
 
 Visualizations can be found in the attached presentation.
 
